@@ -1,33 +1,3 @@
-// ── قاعدة بیانات المھام والأسئلة ──────────────────────────────────────────────
-export const TASKS = [
-// ── الصلوات ──────────────────────────────────────────────────────────────
-{ id: 101, icon: " ", title: " صلاة الفجر ", subject: " صلاة ", grade: "", reward: 25, color: { id: 102, icon: " ", title: " صلاة الظھر ", subject: " صلاة ", grade: "", reward: 20, color: { id: 103, icon: " ", title: " صلاة العصر ", subject: " صلاة ", grade: "", reward: 20, color: { id: 104, icon: " ", title: " صلاة المغرب ", subject: " صلاة ", grade: "", reward: 20, color: { id: 105, icon: " ", title: " صلاة العشاء ", subject: " صلاة ", grade: "", reward: 20, color: // ── المھام الیومیة ────────────────────────────────────────────────────────
-{ id: 1, icon: " ", title: " الاستیقاظ الباكر ", subject: " یومي ", grade: "", reward: { id: 2, icon: " ", title: " تفریش الأسنان ", subject: " نظافة ", grade: "", reward: { id: 3, icon: " ", title: " الإفطار ", subject: " یومي ", grade: "", reward: { id: 4, icon: " ", title: " القیلولة بعد المدرسة ", subject: " راحة ", grade: "", reward: { id: 5, icon: " ", title: " المذاكرة وحل الواجبات ", subject: " دراسي ", grade: "", reward: questions: [
-{ q: "؟ ھل أكملت جمیع واجباتك ", opts: [" نعم ","معظمھا","لم أكمل "], ans: 0 },
-{ q: "؟ ھل راجعت دروس الیوم ", opts: [" نعم ","بعضھا","لم أراجع "], ans: 0 },
-]
-},
-{ id: 6, icon: " ", title: " الاستحمام ", subject: " نظافة ", grade: "", reward: { id: 7, icon: " ", title: " النوم في وقتھ ", subject: " یومي ", grade: "", reward: // ── الكویزات الدراسیة ─────────────────────────────────────────────────────
-{ id: 8, icon: " ", title: " كویز الریاضیات ", subject: " ریاضیات ", grade: " الصف الثالث ", reward: questions: [
-{ q: "؟8 × كم ناتج 7 ", opts: ["54","56","64","48"], ans: 1 },
-{ q: "؟ ما ھو ربع 100 ", opts: ["20","40","25","50"], ans: 2 },
-{ q: "؟27 + كم یساوي 15 ", opts: ["42","40","44","38"], ans: 0 },
-{ q: "؟6 × كم ناتج 9 ", opts: ["52","54","56","48"], ans: 1 },
-{ q: "؟ ما ھو نصف 84 ", opts: ["40","42","44","48"], ans: 1 },
-]
-},
-{ id: 9, icon: " ", title: " كویز العربیة ", subject: " عربي ", grade: " الصف الثاني ", reward: questions: [
-{ q: "؟ جمع كلمة كتاب ", opts: [" كتابات","كتب","أكتب","مكتوب "], ans: 1 },
-{ q: "؟ مضاد كلمة كبیر ", opts: [" طویل","قصیر","صغیر","واسع "], ans: 2 },
-{ q: "؟ مفرد كلمة أقلام ", opts: [" قلم","قلام","مقلمة","أقلام "], ans: 0 },
-]
-},
-{ id: 10, icon: " ", title: " كویز العلوم ", subject: " علوم ", grade: " الصف الرابع ", reward: questions: [
-{ q: "؟ كم اضلاع المثلث ", opts: ["2","3","4","5"], ans: 1 },
-{ q: "؟ اقرب كوكب للشمس ", opts: [" الارض","الزھرة","عطارد","المریخ "], ans: 2 },
-{ q: "؟ وحدة قیاس الكھرباء ", opts: [" نیوتن","امبیر","متر","كیلوجرام "], ans: 1 },
-]
-},
-];
-export const CODE_TTL = 120;
-export const MAX_DAILY_MINUTES = 180;
+export const TASKS=[{id:1,icon:"🕌",title:"صلاة الفجر",subject:"صلاة",grade:"",reward:25,color:"#C3A6FF",timeLabel:"4:30 ص",questions:[]},{id:2,icon:"🕌",title:"صلاة الظهر",subject:"صلاة",grade:"",reward:20,color:"#C3A6FF",timeLabel:"12:00 م",questions:[]},{id:3,icon:"🕌",title:"صلاة العصر",subject:"صلاة",grade:"",reward:20,color:"#C3A6FF",timeLabel:"3:30 م",questions:[]},{id:4,icon:"🕌",title:"صلاة المغرب",subject:"صلاة",grade:"",reward:20,color:"#C3A6FF",timeLabel:"6:00 م",questions:[]},{id:5,icon:"🕌",title:"صلاة العشاء",subject:"صلاة",grade:"",reward:20,color:"#C3A6FF",timeLabel:"7:30 م",questions:[]},{id:6,icon:"⏰",title:"الاستيقاظ الباكر",subject:"يومي",grade:"",reward:30,color:"#FFD700",timeLabel:"5:30 ص",questions:[]},{id:7,icon:"🪥",title:"تفريش الاسنان",subject:"نظافة",grade:"",reward:10,color:"#4ECDC4",timeLabel:"صباحا ومساء",questions:[]},{id:8,icon:"🍳",title:"الافطار",subject:"يومي",grade:"",reward:15,color:"#FFE66D",timeLabel:"الصباح",questions:[]},{id:9,icon:"😴",title:"القيلولة",subject:"راحة",grade:"",reward:15,color:"#A8E6CF",timeLabel:"1:00-3:00 م",questions:[]},{id:10,icon:"📚",title:"المذاكرة والواجبات",subject:"دراسي",grade:"",reward:30,color:"#FF6B6B",timeLabel:"بعد العصر",questions:[{q:"هل اكملت واجباتك",opts:["نعم","معظمها","لا"],ans:0},{q:"هل راجعت دروسك",opts:["نعم","بعضها","لا"],ans:0}]},{id:11,icon:"🚿",title:"الاستحمام",subject:"نظافة",grade:"",reward:20,color:"#667eea",timeLabel:"الاحد والاربعاء",questions:[]},{id:12,icon:"🌙",title:"النوم في وقته",subject:"يومي",grade:"",reward:20,color:"#764ba2",timeLabel:"9:30 م",questions:[]},{id:13,icon:"🔢",title:"كويز الرياضيات",subject:"رياضيات",grade:"الصف الثالث",reward:20,color:"#FF6B6B",timeLabel:"",questions:[{q:"كم ناتج 7 x 8",opts:["54","56","64","48"],ans:1},{q:"ربع 100",opts:["20","40","25","50"],ans:2},{q:"15 + 27",opts:["42","40","44","38"],ans:0}]},{id:14,icon:"📖",title:"كويز العربية",subject:"عربي",grade:"الصف الثاني",reward:15,color:"#4ECDC4",timeLabel:"",questions:[{q:"جمع كتاب",opts:["كتابات","كتب","اكتب","مكتوب"],ans:1},{q:"مضاد كبير",opts:["طويل","قصير","صغير","واسع"],ans:2}]},{id:15,icon:"🔬",title:"كويز العلوم",subject:"علوم",grade:"الصف الرابع",reward:25,color:"#A8E6CF",timeLabel:"",questions:[{q:"اضلاع المثلث",opts:["2","3","4","5"],ans:1},{q:"اقرب كوكب للشمس",opts:["الارض","الزهرة","عطارد","المريخ"],ans:2}]}];
+export const CODE_TTL=120;
+export const MAX_DAILY_MINUTES=180;
